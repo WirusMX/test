@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.wirusmx</groupId>
-    <artifactId>jdbctest</artifactId>
+    <artifactId>springtest</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -14,15 +14,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.xerial</groupId>
-            <artifactId>sqlite-jdbc</artifactId>
-            <version>3.8.11.2</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>4.3.2.RELEASE</version>
+            <artifactId>spring-context</artifactId>
+            <version>4.3.0.RELEASE</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -50,8 +44,8 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.wirusmx.jdbctest.MainClass</mainClass>
-                            <packageName>com.wirusmx.jdbctest</packageName>
+                            <mainClass>com.wirusmx.springtest.MainClass</mainClass>
+                            <packageName>com.wirusmx.springtest</packageName>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
                         </manifest>
